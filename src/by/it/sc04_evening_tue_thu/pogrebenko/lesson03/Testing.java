@@ -45,7 +45,7 @@ public class Testing {
     @Test
     public void testTaskB2() throws Exception {
         Testing testing = new Testing(TaskB2.class);
-        testing.contains("20");
+        testing.contains("20") ;
     }
 
     @Test
