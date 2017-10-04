@@ -26,6 +26,21 @@ package by.it.sc04_evening_tue_thu.pogrebenko.lesson03;
 
 
 */
+import java.util.Scanner;
+
 class TaskC3 {
+    public static void main(String[] args) {
+
+        System.out.println("Ввод: ");
+        Scanner sc=new Scanner(System.in);
+        int getWeight =sc.nextInt();
+        double Mars=3.86;
+        double Earth=9.81;
+        double result=(getWeight*Mars)/Earth;
+        result=result*100;
+        int z = (int) Math.round(result);
+        result= (double)z/100;
+        System.out.println("Вывод:  \n"  + result);
+    }
 
 }

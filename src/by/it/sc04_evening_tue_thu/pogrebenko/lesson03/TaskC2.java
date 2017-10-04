@@ -13,7 +13,22 @@ BIN:100010+11010=111100
 HEX:22+1a=3c
 OKT:42+32=74
 */
+import java.util.Scanner;
+
 class TaskC2 {
+    public static void main(String[] args) {
 
-
+        System.out.println("Ввод: ");
+        Scanner sc = new Scanner(System.in);
+        int i = sc.nextInt();
+        System.out.println("Вывод: ");
+        for (int k = 0; k < 10; k++) {
+            {
+                if (i > 2) i = i % 2;
+                else i = 1;
+                System.out.println(i);
+            }
+        }
+    }
 }
+
